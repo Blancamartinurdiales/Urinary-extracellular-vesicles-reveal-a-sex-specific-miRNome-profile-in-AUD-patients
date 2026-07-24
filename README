@@ -10,7 +10,6 @@ Repository structure
 ├── Data/             # Input datasets
 ├── metadata/         # Sample and study metadata
 ├── Results/          # Generated results, figures and tables
-├── miRNAuEVsAUD.Rproj
 ├── README.md
 └── .gitignore
 
