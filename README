@@ -1,0 +1,24 @@
+# uEVs reveals a sex expecific miRNome profile in AUD patients
+
+*This repository contains the code and supporting files used for the analyses presented in the study:*
+
+"Urinary extracellular vesicles reveal a sex-specific miRNome profile in AUD patients"
+
+The project investigates sex-specific microRNA expression profiles in urinary extracellular vesicles from patients with Alcohol Use Disorder (AUD).
+
+Repository structure
+├── 01Functions/      # Custom R functions
+├── 02Scripts/        # Analysis scripts
+├── Data/             # Input datasets
+├── metadata/         # Sample and study metadata
+├── Results/          # Generated results, figures and tables
+├── README.md
+└── .gitignore
+
+Analyses were performed in R.
+The repository contains the data required to reproduce the analyses presented in the manuscript. 
+Any restrictions on data sharing should comply with the corresponding ethical approvals and institutional regulations.
+
+
+Blanca Martín Urdiales
+
