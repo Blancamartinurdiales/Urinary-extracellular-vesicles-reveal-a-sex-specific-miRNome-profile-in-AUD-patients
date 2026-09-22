@@ -13,7 +13,49 @@ This repository contains a bioinformatics workflow for the processing and analys
 
 ## Workflow overview
 
-Raw FASTQ │ ▼ Quality Control FastQC + MultiQC │ ▼ Adapter & Quality Trimming Cutadapt │ ▼ Post-trimming QC FastQC + MultiQC │ ▼ Lane merging │ ▼ Read Mapping Bowtie │ ├──► Human genome │ └──► Mature miRNAs (miRBase) │ ▼ SAM → BAM Samtools │ ▼ Alignment statistics Samtools flagstat │ ▼ miRNA count matrix │ ▼ Normalization & Differential Expression DESeq2 │ ▼ miRNA target annotation TarBase + miRTarBase │ ▼ Functional enrichment GO + KEGG + mdgsa
+```text
+.
+
+Raw FASTQ
+    │ 
+    ▼ 
+Quality Control FastQC + MultiQC 
+    │ 
+    ▼ 
+Adapter & Quality Trimming Cutadapt 
+    │
+    ▼ 
+Post-trimming QC FastQC + MultiQC 
+    │ 
+    ▼ 
+Lane merging 
+    │ 
+    ▼ 
+Read Mapping Bowtie 
+    │ 
+    ├──► Human genome 
+    │ 
+    └──► Mature miRNAs (miRBase) 
+    │ 
+    ▼ 
+SAM → BAM Samtools 
+    │
+    ▼ 
+Alignment statistics Samtools flagstat 
+    │ 
+    ▼ 
+    miRNA count matrix 
+    │
+    ▼ 
+    Normalization & Differential Expression DESeq2 
+    │
+    ▼
+    miRNA target annotation TarBase + miRTarBase 
+    │ 
+    ▼ 
+    Functional enrichment GO + KEGG + Reatome + mdgsa
+
+```
 
 ---
 
@@ -177,8 +219,8 @@ Following alignment, reads are assigned to individual miRNAs to generate a count
 
 Expected structure:
 
-| sample_1 | sample_2 | sample_3| 
-|----------|----------|---------|
+|----------| sample_1 | sample_2 | sample_3| 
+|----------|----------|----------|---------|
 | hsa-miR-1 | 120 | 150 | 98 | 
 | hsa-miR-2 | 45 | 32 | 51 | 
 | hsa-miR-3 | 800 | 920 | 760 | 
@@ -303,11 +345,13 @@ Analyses were performed in R.
 
 ## Data availability
 
-The repository contains the data required to reproduce the analyses presented in the manuscript. Any restrictions on data sharing should comply with the corresponding ethical approvals and institutional regulations.
+The repository contains the processed data used for the downstream miRNA-seq analyses presented in the manuscript. Specifically, the repository includes the sample-level miRNA count files (*_unique_counts.txt) and the resulting miRNA count matrix (miRNAmatrix.csv).
 
 ---
 
 ## Author
 
-*Blanca Martín Urdiales*
+***Blanca Martín Urdiales***
+
+*Department of Physiology, School of Medicine and Dentistry, University of Valencia, 46010 Valencia, Spain.*
 
